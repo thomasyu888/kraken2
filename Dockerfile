@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get -y install wget make build-essential rsync
+RUN apt-get update && apt-get -y install wget make build-essential rsync ncbi-blast+
 
 WORKDIR /
 RUN wget https://github.com/DerrickWood/kraken2/archive/v2.0.6-beta.tar.gz
